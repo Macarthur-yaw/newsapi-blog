@@ -58,6 +58,25 @@ button > span {
 button > span > svg {
   margin-right: 5px;
 }
+.hidden{
+  display: none;
+}
+.shareBtn{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  width: 80%;
+  top: 50%;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  height: 20%;
+}
+.shareBtn icon{
+  
+}
 
 .Show {
   display: flex;
