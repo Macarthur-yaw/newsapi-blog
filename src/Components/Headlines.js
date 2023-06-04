@@ -33,18 +33,15 @@ const showShares=()=>{
         setLoading(false);
     });
   }, []);
-  function changeContent(event){
-    // const selectedArticle = newsBlocks[index];
-    // console.log(index);
-    const key=event.currentTarget.closest(".newsBlock").key;
-    console.log(key);
-    const matchingContent=news.find((article) => article.id === key);
-    console.log(matchingContent);
+  function changeContent(){
+    
+    
+
   }
 
   const newsBlocks = news.map((article, index) => (
     
-    <div key={index} onClick={changeContent} className={index===2 ? "news1": "newsBlock"}>
+    <div key={index} onClick={changeContent()} className={index===2 ? "news1": "newsBlock"}>
      
       <img className="image" src={article.urlToImage} alt={article.title} />
    
